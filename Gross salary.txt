@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float Basic_salary;
+    int HRA;
+    int DA;
+    int Tax;
+    printf("Enter Basic Salary:");
+    scanf("%f",&Basic_salary);
+    printf("Enter HRA:");
+    scanf("%d",&HRA);
+    printf("Enter DA:");
+    scanf("%d",&DA);
+    printf("Enter Tax(Deductions):");
+    scanf("%d",&Tax);
+    printf("\n");
+    float Gross_salary=Basic_salary+HRA+DA;
+    float Net_salary=Gross_salary-Tax;
+    
+    printf("-----SALARY SUMMARY-----\n");
+    printf("Gross salary  :%f\n",Gross_salary );
+    printf("Net salary    :%f\n",Net_salary);
+    
+    return 0;
+}
