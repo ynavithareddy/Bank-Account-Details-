@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    char Name[10]="Rahul";
+    long long int Acc_no= 123456789;
+    float Bal=25000.00;
+    long long int Mob_num= 9217846756;
+    char ifsc_code[10]="AF12H86I";
+    printf("-------SBI BANK-------\n");
+    printf("Name       :%s\n",Name);
+    printf("Acc_no     :%lld\n",Acc_no);
+    printf("Bal        :%.2f\n",Bal);
+    printf("Mob_num    :%lld\n",Mob_num);
+    printf("ifsc_code  :%c\n",ifsc_code);
+    return 0;
+}
