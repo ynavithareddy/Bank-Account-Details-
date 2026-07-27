@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    float Salary;
+    int credit_score;
+    int age;
+    printf("Enter salary:");
+    scanf("%f",&Salary);
+    printf("enter credit score:");
+    scanf("%d",&credit_score);
+    printf("Enter age:");
+    scanf("%d",&age);
+    if(Salary>=30000 && credit_score>=750 && age>=21)
+        printf("Approved");
+    else
+    printf("Rejected");
+    return 0;
+}
