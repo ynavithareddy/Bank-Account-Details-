@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    if(num%3==0)
+       {
+           if(num%11==0)
+            {
+                  printf( "  divisible by 3 and 11");
+            }
+            else
+            {
+                printf("divisible by 3 but not 11");
+            }
+       }
+    else
+    {
+        printf("not divisible by 3 and 11");
+    }
+    
+    return 0;
+}
