@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   int a;
+   printf("enter a:");
+   scanf("%d",&a);
+   if(a>=90)
+   {
+       printf("Gade A");
+   }
+   else if(a>=70)
+   {
+       printf("Grade B");
+   }
+   else if(a>=55)
+   {
+       printf("Grade C");
+   }
+   else if(a>=45)
+    {
+        printf("Grade D");
+    }
+    else if(a>=37)
+    {
+        printf("Grade E");
+    }
+    else
+    {
+        printf("Fail");
+    }
+    return 0;
+}
