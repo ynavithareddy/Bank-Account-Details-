@@ -1,0 +1,110 @@
+#include <stdio.h>
+
+
+void inputmarks(int marks[]){
+     printf("enter your marks\n");
+    for(int i=0;i<5;i++){
+       
+        scanf("%d",&marks[i]);
+    }
+}
+void displaymarks(int marks[]){
+  
+    for(int i=0;i<5;i++){
+        printf("%d ",marks[i]);
+    }
+    printf("\n");
+}
+float calculateAvg(int marks[])
+{
+    int sum=0;
+    for(int i=0;i<5;i++){
+        sum+=marks[i];
+    }
+    float avg =sum/5.0;
+    printf("avg =%.2f\n",avg);
+    return avg;
+    
+}
+int countpassstudents(int marks[]){
+    int count=0;
+    for(int i=0;i<5;i++)
+    {
+        if(marks[i]>=35)
+        {
+            count++;
+        }
+    }
+printf("%d\n",count);
+return count;
+
+}
+int countfailstudents(int marks[]){
+    int count=0;
+    for(int i=0;i<5;i++)
+    {
+        if(marks[i]<35)
+        {
+            count++;
+        }
+    }
+printf("%d\n",count);
+return count;
+}
+int gradegiven(int marks[]){
+        
+    for(int i=0;i<5;i++)
+    {
+        if(marks[i]<35){
+            printf("F  ");
+        }else if(marks[i]<=70){
+            printf("C  ");
+        }else if(marks[i]<=80){
+            printf("B  ");
+        }else if(marks[i]<=90){
+            printf("A  ");
+        }else if(marks[i]<=100){
+            printf("s  ");
+        }else {
+            printf("invaild ");
+        }
+    
+}printf("\n");
+return 0;
+}
+int findhighest(int marks[])
+{
+    int max=0;
+    for(int i=0;i<5;i++){
+        if(marks[i]>max){
+            max=marks[i];
+        }
+    }
+    printf("max %d\n",max);
+    return 0;
+}
+int findlowest(int marks[])
+{
+    int min=0;
+    for(int i=0;i<5;i++){
+        if(marks[i]<min){
+            min=marks[i];
+        }
+    }
+    printf("min %d",min);
+    printf("\n");
+    return 0;
+}
+int main()
+{
+    int marks[5];int n;
+    inputmarks(marks);
+    displaymarks(marks);
+    calculateAvg(marks);
+    countpassstudents(marks);
+    countfailstudents(marks);
+    gradegiven(marks);
+    findhighest(marks);
+    findlowest(marks);
+    return 0;
+}
